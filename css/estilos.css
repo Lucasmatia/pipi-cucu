@@ -1,0 +1,499 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo{
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    margin-top: 10%;
+}
+ .redes{
+     position: absolute;
+     z-index: 1;
+     top: 60%;
+     left: 45%;
+ } 
+ .redes, ul, li{
+     display: inline-block;
+
+ }
+ .menu1{
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     display: inline-block;
+     background: #ffcfbd;
+     
+
+ }
+
+ .menu1 ul li{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background: #ffcfbd;
+ }
+ .menu1 ul ul{
+     display: none;
+     position: absolute;
+     font-size: 20px;
+     font-weight: bold;
+ }
+  .menu1 ul ul li{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.menu1 ul li:hover ul{
+    display: block;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+h1{
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    font-family: cursive;
+    text-align: center;
+    right: 10%;
+}
+.texto{
+    width: 60%;
+    height: auto;
+    margin-left: 12%;
+    padding: 10px;
+    margin-bottom: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contador{
+    width: 98%;
+    height: auto;
+    display: inline-block;
+    background: #ffcfbd;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 12px;
+}
+.contador .titulo{
+    display: inline;
+    position: relative;
+    width: 60%;
+    height: auto;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+     top: 1em;
+     margin-left: 10%;
+     font-family: cursive;
+     font-weight: bold;
+
+
+}
+
+ @property --num{
+    syntax : "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+
+
+ .contador .reloj {
+    width: 60px;
+    height: 20%;
+    border-radius: 100%;
+    border: solid 5px black;
+    background: white;
+    animation: counter 10s;
+    counter-reset: num var(--num);
+    font-size: 40px;
+    padding: 20px;
+    animation-iteration-count: infinite;
+    text-align: center;
+    right: 50%;
+    float: right;
+    margin-right: 20%;
+    margin-bottom: 5px;
+ }
+
+  .reloj::after {
+    content: counter(num);
+    
+  }
+
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 500;
+    }
+  }
+.grid{
+    width: 100%;
+    height: auto;
+    display: grid;
+     grid-template-columns: repeat(3,22%);
+     grid-column-gap: 3em;
+     justify-content: space-around;
+}
+ .grid .tortas{
+    grid-area: tortas;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(249, 250, 250);
+    padding: 1em;
+
+}
+.grid img{
+     width: 100%;
+     height: auto;
+}
+ .grid .tartas{
+     grid-area: tartas;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(249, 250, 250);
+    padding: 1em;
+
+}
+ .grid .novedades{
+     grid-area: novedades;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(249, 250, 250);
+    padding: 1em;
+
+}
+
+.grid h3{
+    text-align: center;
+    padding: 5px;
+    color: black;
+}
+section{
+    width: 100%;
+    height: auto;
+}
+h2{
+    margin: 1em;
+    padding: 10px;
+    font-family: cursive;
+    background: #ffcfbd;
+}
+.comentario{
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
+} 
+.linkComent{
+    right: 10%;
+    background: #546aca;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+section, .linkComent, a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 4em;
+    background: #FFDFD3;
+}
+  .imgLogo{
+      position: relative;
+     width:20%;
+     height: auto;
+ }
+ .contactoFooter{
+     position: absolute;
+     display: inline-block;
+     width: 30%;
+     height: auto;
+     left: 22%;
+     padding: 10px;
+     font-size: 15px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ }
+ .contactoFooter,ul, li{
+     padding: 5px;
+ }
+ h4{
+     padding: 10px;
+     margin-bottom: 5px;
+     font-size: 20px;
+     font-family: cursive;
+ }
+ .redes1{
+     position: absolute;
+     left: 60%;
+     width: 30%;
+     height: auto;
+     display: inline-block;
+     margin-top: 4em;
+
+ }
+ /*el css de redes de la las otras hojas */
+
+.titulo{
+    width: 109%;
+    height: auto;
+    background-color: #ffcfbd;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    
+}
+ .redesTortas{
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    left: 35%;
+} 
+.flexbox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flexbox  .flex{
+    margin: 1em;
+    border: 3px solid black;
+    text-align: center;
+    background-color: rgb(249, 250, 250);
+    
+}
+.flexbox .flex .txt{
+    padding: 10px;
+}
+/*Hoja de Contacto */
+
+.cuerpoContacto{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.textoContacto{
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.formulario{
+    width: 45%;
+    height: auto;
+    padding: 1em;
+    background-color: #ffcfbd;
+    margin: 10px;
+}
+.formulario label{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    margin: 4px;
+}
+.formulario input{
+    width: 40%;
+    height: auto;
+    margin: 4px;
+}
+ .masc{
+    position: relative;
+    display: inline;
+    width: 10%;
+    height: auto;
+    padding-bottom:5px ;
+
+
+}
+.masc p{
+    width: 3%;
+    display: inline-block;
+}
+.fem{
+    position: relative;
+    display: inline;
+    width: 10%;
+    height: auto;
+    padding-bottom:5px ;
+
+}
+.fem p{
+    width: 3%;
+    display: inline-block;
+}
+.mapas{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    top: 90%;
+    left: 52%;
+}
+.submit{
+    position: relative;
+    width: 10%;
+    height: auto;
+    padding: 7px;
+    background: white;
+    height: auto;
+    left: 55%;
+    cursor: pointer;
+    /*medi query */
+}
+@media only screen and (max-width: 800px){
+    .contenedor{
+        width: 100%;
+        height: auto;
+    }
+    header{
+        width: 100%;
+        height: auto;
+    }
+    .logo{
+        width: 40%;
+        height: auto;
+    }
+    .redes{
+        width: 30%;
+        height: auto;
+        top: 25%;
+        left: 40%;
+    }
+    .redes img{
+        width: 30px;
+        height: auto;
+    }
+    .menu1{
+        width: 60%;
+        height: auto;
+        left: 5px;
+        font-size: 10px;
+        display: inline-block;
+
+    }
+    .menu1 ul li{
+        font-size: 14px;
+    }
+
+}
+@media only screen and (max-width: 800px){
+    .grid{
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1,70%);
+        
+        
+    }
+    .grid .tortas{
+      margin-top: 10px;
+    }
+    .grid .tartas{
+        margin-top: 10px;
+    }
+    .grid .novedades{
+        margin-top: 10px;
+    }
+
+}
+@media only screen and (max-width: 800px){
+    .contador{
+        width: 90%;
+        height: 10em;
+        
+    }
+    .contador .titulo{
+        width: 100%;
+        height: 2em;
+       font-size: 20px;
+       padding: 5px;
+       margin-top: 20px;
+       margin-bottom: 20px;
+    }
+    .contador .reloj {
+          position: relative;
+          margin-top: 40px;
+          left: 10px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .comentario{
+        width: 90%;
+        height: auto;
+        margin: 0%;
+        
+    }
+    .comentarioImagen{
+        width: 85%;
+        height: auto;
+
+    }
+    .linkComent{
+        position: relative;
+        top: 2em;
+         display: block;
+         width: 40%;
+         margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 800px){
+    footer{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 1em;
+    }
+    .contactoFooter{
+        width: 40%;
+        height: auto;
+        position: relative;
+        left: 5px;
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    footer .imgLogo{
+        width: 20%;
+        height: auto;
+        bottom: 7em;
+    }
+     footer .redes1{
+         display: inline-block;
+         position: relative;
+        width: 20%;
+        height: auto;
+        left: 20px;
+    
+    }
+     footer .redes1 img{
+        width: 40px;
+        height: auto;
+    }
+
+}
+
+
+ 
